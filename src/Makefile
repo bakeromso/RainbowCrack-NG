@@ -28,3 +28,10 @@ rcrack: $(OBJS)
 
 clean:
 	rm -f $(OBJS) rtgen rtdump rtsort rcrack
+
+install: rtgen rtdump rtsort rcrack
+	mkdir -p /usr/local/bin
+	cp rtgen /usr/local/bin/
+	cp rtdump /usr/local/bin/
+	cp rtsort /usr/local/bin/
+	cp rcrack /usr/local/bin/
